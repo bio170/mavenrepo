@@ -34,7 +34,7 @@
         <snapshotRepository>
             <id>deployment</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://localhost:8081/repository/simple-snap/</url>
+            <url>http:http://localhost:8081/repository/sample-snap/</url>
         </snapshotRepository>
     </distributionManagement>
   <dependencies>
