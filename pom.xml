@@ -28,13 +28,13 @@
    <distributionManagement>
         <repository>
             <id>deployment</id>
-            <name>Internal Releases</name>
-            <url>http://localhost:8081/repository/sample-rel/</url>
+            <name>nexus-release</name>
+            <url>http://localhost:8081/repository/nexus-release/</url>
         </repository>
         <snapshotRepository>
             <id>deployment</id>
-            <name>Internal Snapshot Releases</name>
-            <url>http://localhost:8081/repository/maven-snapshots</url>
+            <name>nexus-snapshot</name>
+            <url>http://localhost:8081/repository/nexus-snapshot/</url>
         </snapshotRepository>
     </distributionManagement>
   <dependencies>
