@@ -34,7 +34,7 @@
         <snapshotRepository>
             <id>deployment</id>
             <name>nexus-snapshot</name>
-            <url>http://localhost:8081/repository/nexus-snapshot2/</url>
+            <url>http://localhost:8081/repository/nexus-snapsho2/</url>
         </snapshotRepository>
     </distributionManagement>
   <dependencies>
