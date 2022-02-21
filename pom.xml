@@ -28,8 +28,8 @@
    <distributionManagement>
         <repository>
             <id>deployment</id>
-            <name>nexus-release</name>
-            <url>http://localhost:8081/repository/nexus-release1/</url>
+            <name>sonarqube-1test</name>
+            <url>http://localhost:9000/dashboard?id=sonarqube-1test/</url>
         </repository>
         <snapshotRepository>
             <id>deployment</id>
