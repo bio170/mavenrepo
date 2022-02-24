@@ -32,7 +32,7 @@
             <url>http://localhost:9000/dashboard?id=sonarqube-1test/</url>
         </repository>
         <snapshotRepository>
-            <id>deployment</id>
+            <id>studentapp</id>
             <name>nexus-release1</name>
             <url>http://localhost:8081/repository/nexus-release1/</url>
         </snapshotRepository>
