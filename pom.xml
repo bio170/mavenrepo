@@ -31,6 +31,11 @@
             <name>sonarqube-1test</name>
             <url>http://localhost:9000/dashboard?id=sonarqube-1test/</url>
         </repository>
+     <server>
+      <id>studentapp</id>
+      <username>admin</username>
+      <password>Rahul123.</password>
+    </server>
         <snapshotRepository>
             <id>studentapp</id>
             <name>nexus-release1</name>
