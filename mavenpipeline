@@ -1,0 +1,21 @@
+pipeline {
+    agent any 
+    stages {
+        stage('git scm') {
+            steps {
+            git changelog: false, credentialsId: '8e33b924-3c5c-4377-a1f1-af1386b225d1', poll: false, url: 'https://github.com/bio170/mavenrepo.git'
+        }
+            
+        }
+        
+        stage('compile') {
+
+            steps {
+                withMaven(globalMavenSettingsConfig: 'true', globalMavenSettingsFilePath: '${user.home}/.m2/settings.xml', jdk: 'JAVA_HOME', maven: 'maven', mavenLocalRepo: 'C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\docker image puahs', mavenSettingsConfig: 'null', mavenSettingsFilePath: ' ${user.home}/.m2/settings.xml') {
+
+                    sh 'clean install -s settings.xml'
+                }
+            }
+        }
+    }
+}
