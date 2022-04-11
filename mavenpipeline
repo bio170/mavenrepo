@@ -7,15 +7,14 @@ pipeline {
         }
             
         }
-        
-        stage('compile') {
+    }      
+      stage ('compile stage') {
+    steps {
+        with Maven(Maven : 'maven') {
 
-            steps {
-                withMaven(globalMavenSettingsConfig: 'true', globalMavenSettingsFilePath: '${user.home}/.m2/settings.xml', jdk: 'JAVA_HOME', maven: 'maven', mavenLocalRepo: 'C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\docker image puahs', mavenSettingsConfig: 'null', mavenSettingsFilePath: ' ${user.home}/.m2/settings.xml') {
-
-                    sh 'clean install -s settings.xml'
-                }
-            }
+            sh 'mvn clean compile'
+            
         }
+
     }
-}
+} 
